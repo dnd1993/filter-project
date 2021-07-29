@@ -1,0 +1,366 @@
+*,
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-family: "Kaushan Script", cursive;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7rem;
+}
+.nav__image {
+  margin-left: 2rem;
+}
+
+.nav__contact,
+.nav__shopping-cart {
+  display: flex;
+  font-size: 1.5rem;
+}
+.nav__shopping-cart {
+  background-color: #fff;
+}
+.nav__shopping-cart:hover {
+  background-color: rgba(239, 121, 152, 0.5);
+  transform: translateY(0);
+}
+.nav__shopping-cart:active {
+  transform: translateY(0.2rem);
+}
+.nav__sections li {
+  list-style: none;
+  display: inline-block;
+  font-size: 2rem;
+  color: #ef7998;
+  cursor: pointer;
+  transform: translateY(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: translate 0.2s;
+}
+.nav__sections li:hover {
+  transform: translateY(-2px);
+}
+.nav__sections li:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.nav__shopping-cart {
+  margin-right: 3rem;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 0.7rem;
+  cursor: pointer;
+}
+.nav__phone-icon,
+.nav__shopping-cart-icon {
+  margin-right: 1rem;
+}
+.nav__toggler {
+  display: none;
+  border: none !important;
+  background-color: transparent;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+.nav__toggler-icon {
+  font-size: 4rem;
+  color: #ef7998;
+}
+.nav__collapse {
+  display: none;
+  font-size: 2.5rem;
+  color: #ef7998;
+}
+.nav__collapse li {
+  cursor: pointer;
+  list-style: none;
+  padding: 0 0 1rem 2rem;
+}
+.show {
+  display: initial;
+  margin-top: 0;
+}
+.section-welcome {
+  min-height: calc(100vh - 7rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(
+      rgba(249, 228, 148, 0.5),
+      rgba(249, 228, 148, 0.5)
+    )
+    url(img/headerBcg.jpeg); */
+  background: linear-gradient(
+      rgba(249, 228, 148, 0.5),
+      rgba(249, 228, 148, 0.5)
+    ),
+    url("img/headerBcg.jpeg") center/cover fixed no-repeat;
+  font-size: 2.5rem;
+}
+.section-welcome__header {
+  color: #fff;
+}
+.span {
+  color: #ef7998;
+  font-size: 6rem;
+}
+
+.section-welcome__btn-explore {
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border: 2px solid #000;
+  cursor: pointer;
+  transition: all ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 0.3rem 0.7rem rgba(187, 207, 94, 0.4);
+}
+.section-welcome__btn-explore:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.section-welcome__btn-explore:active {
+  transform: translateY(0.2rem);
+  box-shadow: 0 0.2rem 0.4rem rgba(187, 207, 94, 0.4);
+}
+.section-about-us {
+  display: flex;
+  align-items: center;
+  /* height: 95vh; */
+  padding: 6rem 0 7rem;
+}
+.section-about-us__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 6rem;
+  width: 50vw;
+}
+.section-about-us__description h2,
+.section-our-store h2 {
+  color: #000;
+  font-size: 3rem;
+}
+.section-about-us__description p {
+  width: 70%;
+  font-size: 1.6rem;
+  color: #6c757d;
+  line-height: 3rem;
+}
+.section-about-us__img {
+  width: 50vw;
+  margin: 4rem 6rem 0 0;
+  position: relative;
+}
+.section-about-us__img::before {
+  content: "";
+  border: 2px rgb(249, 228, 148) solid;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -3.4rem;
+  left: -3.7rem;
+  outline: 0.5rem solid rgb(249, 228, 148);
+  z-index: -1;
+  transition: all 1s ease-in-out;
+}
+.section-about-us__img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.section-about-us__img:hover:before {
+  top: 0;
+  left: 0;
+}
+.section-about-us__description button {
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.section-about-us__description button:hover {
+  background-color: rgba(249, 228, 148, 0.9);
+  color: #ef7998;
+  font-weight: 700;
+}
+.section-about-us__description button:active {
+  transform: translateY(0.2rem);
+}
+.section-our-store {
+  background: rgb(238, 238, 238);
+  padding: 4rem 0 4rem;
+  min-height: 100vh;
+  position: relative;
+}
+
+.section-our-store h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.section-our-store__categories {
+  display: flex;
+  justify-content: center;
+}
+.section-our-store__categories li {
+  list-style: none;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  padding: 0.8rem 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.section-our-store__categories li:active {
+  transform: translateY(0.3rem);
+}
+.section-our-store__categories li:not(:last-child) {
+  margin-right: 5rem;
+}
+.section-our-store__categories li:hover {
+  background-color: #ef7998;
+  color: #fff;
+}
+.section-our-store__search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0 3rem;
+  font-size: 1.6rem;
+}
+.section-our-store__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ef7998;
+  font-size: inherit;
+  padding: 0.7rem 0.9rem;
+  border-radius: 3px 0 0 3px;
+}
+.section-our-store__search-bar input {
+  padding: 0.5rem 0 0.5rem 1rem;
+  width: 40%;
+  border: 1px solid #ced4da;
+  border-radius: 0 3px 3px 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.section-our-store__items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section-our-store__item-card {
+  width: 27%;
+  margin-bottom: 3rem;
+  margin-right: 3rem;
+}
+/* .section-our-store__item-card:nth-child(3n) {
+  margin-right: 0;
+} */
+.section-our-store__img-container {
+  overflow: hidden;
+  /* height: 250px; */
+  cursor: pointer;
+}
+.section-our-store__img-container img {
+  max-width: 100%;
+  display: block;
+  border-radius: 4px 4px 0 0;
+  transition: all 0.8s ease-in-out;
+}
+/* It breakes the responsive design so make sure you really need this effect  */
+.section-our-store__img-container img:hover {
+  /* transform: scale(20%); */
+  max-width: 103%;
+}
+.section-our-store__item-description {
+  background: #fff;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1.5rem 2.3rem 2rem;
+  border-radius: 0 0 4px 4px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 55%;
+  }
+  .section-our-store__item-card {
+    width:40%;
+  }
+  .section-our-store__search-bar input {
+    width: 60%;
+  }
+  .section-our-store__categories li:not(:last-child) {
+    margin-right: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  html {
+    font-size: 50%;
+  }
+  .section-our-store__item-card {
+    width:70%;
+  }
+  
+  .nav__sections, .nav__contact, .nav__shopping-cart {
+    display: none;
+  }
+  .nav__toggler {
+    display: initial;
+  }
+  .section-our-store__categories li:not(:last-child) {
+    margin-right: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .section-our-store__categories li:not(:last-child) {
+    margin-right: .7rem;
+  }
+  .section-about-us {
+    flex-direction: column;
+  }
+  .section-about-us__img::before {
+    top:0;
+    left:0;
+  }
+  .section-about-us__description {
+    width:70vw;
+  }
+  .section-our-store__categories li {
+    font-size:1.3rem;
+  }
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64f80f2f01.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="app.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Shop</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav" id="nav">
+        <div class="nav__container">
+        <image class="nav__image" alt="Dognut Logo" src="img/logo.svg"></image>
+        <ul class="nav__sections">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#store">Store</a></li>
+        </ul>
+        <div class="nav__contact">
+          <span class="nav__phone-icon">
+            <i class="fas fa-phone"></i>
+          </span>
+          <p>+ 123 456 789</p>
+        </div>
+        <div class="nav__shopping-cart">
+          <span class="nav__shopping-cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+          </span>
+          <p>0 Items - $0.00</p>
+        </div>
+        <button class="nav__toggler" type="button">
+          <span class="nav__toggler-icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+        </div>
+        <ul class="nav__collapse">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#store">Store</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-welcome" id="home">
+        <h1 class="section-welcome__header">
+          Welcome To <span class="span">Grandma's</span>
+        </h1>
+        <button class="section-welcome__btn-explore">
+          <a href="#store">Explore</a>
+        </button>
+      </section>
+      <section class="section-about-us" id="about">
+        <div class="section-about-us__description">
+          <h2>About <span class="span">Us</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+            aliquam voluptas beatae vitae expedita consectetur nesciunt quia
+            deserunt asperiores facere fuga dicta fugiat corrupti et omnis porro
+            at dolorum! Ad!
+          </p>
+          <button><a href="#store">Explore</a></button>
+        </div>
+        <div class="section-about-us__img">
+          <img src="img/sweets-1.jpeg" alt="Macaroons" />
+        </div>
+      </section>
+      <section class="section-our-store" id="store">
+        <h2>Our <span class="span">Store</span></h2>
+        <ul class="section-our-store__categories">
+          <li data-filter="all">All</li>
+          <li data-filter="cakes">Cakes</li>
+          <li data-filter="cupcakes">Cupcakes</li>
+          <li data-filter="sweets">Sweets</li>
+          <li data-filter="doughnuts">Doughnuts</li>
+        </ul>
+        <div class="section-our-store__search-bar">
+          <span class="section-our-store__icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <input
+            type="text"
+            placeholder="item...."
+            class="section-our-store__input"
+          />
+        </div>
+        <div class="section-our-store__items-container">
+          <div class="section-our-store__item-card" data-item="sweets">
+            <div class="section-our-store__img-container">
+              <img src="img/sweets-1.jpeg" alt="Macaroons" />
+            </div>
+            <div class="section-our-store__item-description">
+              <p>Sweet Item</p>
+              <span>$5</span>
+            </div>
+          </div>
+
+          <div class="section-our-store__item-card" data-item="cupcakes">
+            <div class="section-our-store__img-container">
+              <img src="img/cupcake-1.jpeg" alt="Macaroons" />
+            </div>
+            <div class="section-our-store__item-description">
+              <p>Cupcake Item</p>
+              <span>$5</span>
+            </div>
+          </div>
+
+          <div class="section-our-store__item-card" data-item="cakes">
+            <div class="section-our-store__img-container">
+              <img src="img/cake-1.jpeg" alt="Macaroons" />
+            </div>
+            <div class="section-our-store__item-description">
+              <p>Cake Item</p>
+              <span>$5</span>
+            </div>
+          </div>
+
+          <div class="section-our-store__item-card" data-item="doughnuts">
+            <div class="section-our-store__img-container">
+              <img src="img/doughnut-1.jpeg" alt="Macaroons" />
+            </div>
+            <div class="section-our-store__item-description">
+              <p>Doughnut Item</p>
+              <span>$5</span>
+            </div>
+          </div>
+
+          <div class="section-our-store__item-card" data-item="sweets">
+            <div class="section-our-store__img-container">
+              <img src="img/sweets-2.jpeg" alt="Macaroons" />
+            </div>
+            <div class="section-our-store__item-description">
+              <p>Sweet Item</p>
+              <span>$10</span>
+            </div>
+          </div>
+
+          <div class="section-our-store__item-card" data-item="cupcakes">
+            <div class="section-our-store__img-container">
+              <img src="img/cupcake-2.jpeg" alt="Macaroons" />
+            </div>
+            <div class="section-our-store__item-description">
+              <p>Cupcake Item</p>
+              <span>$10</span>
+            </div>
+          </div>
+
+          <div class="section-our-store__item-card" data-item="cakes">
+            <div class="section-our-store__img-container">
+              <img src="img/cake-2.jpeg" alt="Macaroons" />
+            </div>
+            <div class="section-our-store__item-description">
+              <p>Cake Item</p>
+              <span>$10</span>
+            </div>
+          </div>
+
+          <div class="section-our-store__item-card" data-item="doughnuts">
+            <div class="section-our-store__img-container">
+              <img src="img/doughnut-2.jpeg" alt="Macaroons" />
+            </div>
+            <div class="section-our-store__item-description">
+              <p>Doughnut Item</p>
+              <span>$10</span>
+            </div>
+          </div>
+
+          <div class="section-our-store__item-card" data-item="sweets">
+            <div class="section-our-store__img-container">
+              <img src="img/sweets-3.jpeg" alt="Macaroons" />
+            </div>
+            <div class="section-our-store__item-description">
+              <p>Sweet Item</p>
+              <span>$15</span>
+            </div>
+          </div>
+
+          <div class="section-our-store__item-card" data-item="cupcakes">
+            <div class="section-our-store__img-container">
+              <img src="img/cupcake-3.jpeg" alt="Macaroons" />
+            </div>
+            <div class="section-our-store__item-description">
+              <p>Cupcake Item</p>
+              <span>$5</span>
+            </div>
+          </div>
+
+          <div class="section-our-store__item-card" data-item="cakes">
+            <div class="section-our-store__img-container">
+              <img src="img/cake-3.jpeg" alt="Macaroons" />
+            </div>
+            <div class="section-our-store__item-description">
+              <p>Cake Item</p>
+              <span>$15</span>
+            </div>
+          </div>
+
+          <div class="section-our-store__item-card" data-item="doughnut">
+            <div class="section-our-store__img-container">
+              <img src="img/doughnut-3.jpeg" alt="Macaroons" />
+            </div>
+            <div class="section-our-store__item-description">
+              <p>Doughnut Item</p>
+              <span>$5</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
