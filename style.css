@@ -107,11 +107,6 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background: linear-gradient(
-      rgba(249, 228, 148, 0.5),
-      rgba(249, 228, 148, 0.5)
-    )
-    url(img/headerBcg.jpeg); */
   background: linear-gradient(
       rgba(249, 228, 148, 0.5),
       rgba(249, 228, 148, 0.5)
@@ -148,7 +143,6 @@ a {
 .section-about-us {
   display: flex;
   align-items: center;
-  /* height: 95vh; */
   padding: 6rem 0 7rem;
 }
 .section-about-us__description {
@@ -283,12 +277,8 @@ a {
   margin-bottom: 3rem;
   margin-right: 3rem;
 }
-/* .section-our-store__item-card:nth-child(3n) {
-  margin-right: 0;
-} */
 .section-our-store__img-container {
   overflow: hidden;
-  /* height: 250px; */
   cursor: pointer;
 }
 .section-our-store__img-container img {
@@ -297,9 +287,8 @@ a {
   border-radius: 4px 4px 0 0;
   transition: all 0.8s ease-in-out;
 }
-/* It breakes the responsive design so make sure you really need this effect  */
+
 .section-our-store__img-container img:hover {
-  /* transform: scale(20%); */
   max-width: 103%;
 }
 .section-our-store__item-description {
@@ -317,7 +306,7 @@ a {
     font-size: 55%;
   }
   .section-our-store__item-card {
-    width:40%;
+    width: 40%;
   }
   .section-our-store__search-bar input {
     width: 60%;
@@ -332,10 +321,12 @@ a {
     font-size: 50%;
   }
   .section-our-store__item-card {
-    width:70%;
+    width: 70%;
   }
-  
-  .nav__sections, .nav__contact, .nav__shopping-cart {
+
+  .nav__sections,
+  .nav__contact,
+  .nav__shopping-cart {
     display: none;
   }
   .nav__toggler {
@@ -348,19 +339,19 @@ a {
 
 @media only screen and (max-width: 500px) {
   .section-our-store__categories li:not(:last-child) {
-    margin-right: .7rem;
+    margin-right: 0.7rem;
   }
   .section-about-us {
     flex-direction: column;
   }
   .section-about-us__img::before {
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
   }
   .section-about-us__description {
-    width:70vw;
+    width: 70vw;
   }
   .section-our-store__categories li {
-    font-size:1.3rem;
+    font-size: 1.3rem;
   }
 }
